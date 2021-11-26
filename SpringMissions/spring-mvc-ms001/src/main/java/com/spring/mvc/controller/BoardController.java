@@ -1,28 +1,26 @@
 package com.spring.mvc.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class BoardController {
+@RequestMapping("/board")
+public class Boardcontroller {
 	
-	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
-	
-	@RequestMapping(value = "/board/register")
-	public void registerForm() {
-		logger.info("registerForm");
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public String registerForm() {
+		return "board/register";
 	}
 	
-	@RequestMapping("/board/modify")
-	public void modifyForm() {
-		logger.info("modifyForm");
+	@RequestMapping(value ="/modify", method = RequestMethod.GET)
+	public String modifyForm() {
+		return "board/modify";
+	}
+	
+	@RequestMapping(value="/list", method = RequestMethod.GET)
+	public String list() {
+		return "board/list";
 	}
 
-	@RequestMapping("/board/list")
-	public void list() {
-		logger.info("list");
-	}
-	
 }

@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>SPRING MISSION 001</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
 	<h1>MODIFY</h1>
-	<h2>수정화면</h2>
-	<a href="/">HOME</a>
+	<h2>수정화면 </h2>
+	<a href="http://localhost:8080/">Home</a>
 </body>
 </html>
